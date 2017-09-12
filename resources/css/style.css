@@ -1,5 +1,12 @@
 body {
+	background-color: black;
 }
 header {
+	background-color: black;
+	height: 69px;
+	border-bottom: 1px solid seashell;
 }
-
+#tea-cozy-logo {
+	height: 50px;
+	padding: 9.5px 10px;
+}
