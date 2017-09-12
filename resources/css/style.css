@@ -2,11 +2,24 @@ body {
 	background-color: black;
 }
 header {
+	display: flex;
 	background-color: black;
 	height: 69px;
 	border-bottom: 1px solid seashell;
+	align-items: center;
+}
+#logogrow {
+	/*THE ONLY WAY I CAN GET THE LOGO ON THE LEFT AND NAV ON THE RIGHT*/
+	display: flex;
+	flex-grow: 1;
 }
 #tea-cozy-logo {
 	height: 50px;
 	padding: 9.5px 10px;
+}
+nav {
+}
+.nav {
+	padding: 0px 6px;
+	color: gray;
 }
