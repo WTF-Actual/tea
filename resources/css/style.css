@@ -1,5 +1,9 @@
 body {
 	background-color: black;
+	font-family: Helvetica;
+	font-size: 22px;
+	opacity: 0.9;
+	justify-content: center;
 }
 header {
 	display: flex;
@@ -8,7 +12,7 @@ header {
 	border-bottom: 1px solid seashell;
 	align-items: center;
 }
-#logogrow {
+#logobox {
 	/*THE ONLY WAY I CAN GET THE LOGO ON THE LEFT AND NAV ON THE RIGHT*/
 	display: flex;
 	flex-grow: 1;
@@ -17,9 +21,7 @@ header {
 	height: 50px;
 	padding: 9.5px 10px;
 }
-nav {
-}
 .nav {
-	padding: 0px 6px;
+	padding: 0px 8px;
 	color: gray;
 }
