@@ -19,7 +19,6 @@ header {
 	align-items: center;
 }
 #logobox {
-	/*THE ONLY WAY I CAN GET THE LOGO ON THE LEFT AND NAV ON THE RIGHT*/
 	display: flex;
 	flex-grow: 1;
 }
@@ -38,7 +37,6 @@ header {
 	margin-top: 70px;
 	flex-direction: column;
 	width: 1200px;
-	justify-content: center;
 }
 #top-container {
 	display: inherit;
@@ -65,5 +63,5 @@ header {
 .blocky{
 	border: 1px solid white;
 }
-.white {
+.test {
 	color: white;
