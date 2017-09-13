@@ -7,6 +7,7 @@ body {
 	opacity: 0.9;
 	position: relative;
 	margin: 0px; /*NOTE 1*/
+	align-items: center; /*NOTE 3*/
 }
 header {
 	display: flex;
@@ -76,6 +77,7 @@ header {
 
 
 /*
-NOTE 1: remove gaps around screen
+NOTE 1: remove gaps around screen;
 NOTE 2: properly arrange header items;
+NOTE 3: by using flex-direction column, justify content and align-items switch identity;
 */
