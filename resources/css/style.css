@@ -7,7 +7,6 @@ body {
 	opacity: 0.9;
 	position: relative;
 	margin: 0px; /*NOTE 1*/
-
 }
 header {
 	display: flex;
@@ -28,7 +27,9 @@ header {
 }
 .nav {
 	padding: 0px 8px;
-	color: gray;
+}
+.text {
+	color: seashell;
 }
 
 /*Master Container*/
@@ -37,6 +38,7 @@ header {
 	margin-top: 70px;
 	flex-direction: column;
 	width: 1200px;
+	justify-content: center;
 }
 #top-container {
 	background-image: url(../images/img-mission-background.jpg);
@@ -47,6 +49,10 @@ header {
 #middle-container {
 	display: inherit;
 	width: 1000px;
+	justify-content: center;
+}
+.headliner {
+	justify-content: center;
 }
 #bottom-container {
 	background-image: url(../images/img-locations-background.jpg);
