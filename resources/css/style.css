@@ -1,10 +1,10 @@
 body {
-	display: block;
+	display: flex;
+	flex-direction: column;
 	background-color: black;
 	font-family: Helvetica;
 	font-size: 22px;
 	opacity: 0.9;
-	justify-content: center;
 }
 header {
 	display: flex;
@@ -29,12 +29,30 @@ header {
 
 /*Master Container*/
 #master-container {
-	display: flex;
+	flex-direction: column;
 	width: 1200px;
 }
-
-
+#top-container {
+	display: inherit;
+	width: inherit;
+	height: 700px;
 }
+#middle-container {
+	display: inherit;
+	width: 1000px;
+}
+#bottom-container {
+	display: inherit;
+	width: inherit;
+	height: 500px;
+}
+#contacts-container {
+	display: inherit;
+	height: 200px;
+}
+#copyright-container {
+}
+
 /*Debug properties*/
 .blocky{
 	border: 1px solid white;
