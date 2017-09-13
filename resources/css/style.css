@@ -39,6 +39,7 @@ header {
 	width: 1200px;
 }
 #top-container {
+	background-image: url(../images/img-mission-background.jpg);
 	display: inherit;
 	width: inherit;
 	height: 700px;
@@ -48,6 +49,7 @@ header {
 	width: 1000px;
 }
 #bottom-container {
+	background-image: url(../images/img-locations-background.jpg);
 	display: inherit;
 	width: inherit;
 	height: 500px;
