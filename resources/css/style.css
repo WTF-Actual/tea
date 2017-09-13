@@ -6,7 +6,7 @@ body {
 	font-size: 22px;
 	opacity: 0.9;
 	position: relative;
-	margin: 0px; /*remove gaps around screen*/
+	margin: 0px; /*NOTE 1*/
 
 }
 header {
@@ -18,7 +18,7 @@ header {
 	border-bottom: 1px solid seashell;
 	align-items: center;
 }
-#logobox {
+#logobox { /*NOTE 2*/
 	display: flex;
 	flex-grow: 1;
 }
@@ -65,3 +65,9 @@ header {
 }
 .test {
 	color: white;
+
+
+/*
+NOTE 1: remove gaps around screen
+NOTE 2: properly arrange header items;
+*/
