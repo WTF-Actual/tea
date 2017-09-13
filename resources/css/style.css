@@ -5,11 +5,16 @@ body {
 	font-family: Helvetica;
 	font-size: 22px;
 	opacity: 0.9;
+	position: relative;
+	margin: 0px; /*remove gaps around screen*/
+
 }
 header {
 	display: flex;
+	position: fixed;
 	background-color: black;
 	height: 69px;
+	width: 100%;
 	border-bottom: 1px solid seashell;
 	align-items: center;
 }
@@ -29,8 +34,11 @@ header {
 
 /*Master Container*/
 #master-container {
+	display: flex;
+	margin-top: 70px;
 	flex-direction: column;
 	width: 1200px;
+	justify-content: center;
 }
 #top-container {
 	display: inherit;
@@ -53,7 +61,7 @@ header {
 #copyright-container {
 }
 
-/*Debug properties*/
+/*testing properties*/
 .blocky{
 	border: 1px solid white;
 }
