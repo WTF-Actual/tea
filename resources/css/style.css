@@ -1,4 +1,5 @@
 body {
+	display: block;
 	background-color: black;
 	font-family: Helvetica;
 	font-size: 22px;
@@ -25,3 +26,18 @@ header {
 	padding: 0px 8px;
 	color: gray;
 }
+
+/*Master Container*/
+#master-container {
+	display: flex;
+	width: 1200px;
+}
+
+
+}
+/*Debug properties*/
+.blocky{
+	border: 1px solid white;
+}
+.white {
+	color: white;
