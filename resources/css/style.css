@@ -54,7 +54,7 @@ header {
 	width: 1200px;
 	align-items: center;
 }
-#mission {
+#top-container {
 	background-image: url(../images/img-mission-background.jpg);
 	display: flex;
 	width: inherit;
@@ -62,7 +62,7 @@ header {
 	justify-content: center;
 	align-items: center;
 }
-#mission .headliner {
+#top-container .headliner {
 	background-color: black;
 }
 #middle-container { /*ISSUE 4*/
