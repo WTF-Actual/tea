@@ -13,6 +13,7 @@ body {
 header {
 	display: flex;
 	position: fixed;
+	z-index: 1; /*NOTE 4*/
 	background-color: black;
 	height: 69px;
 	width: 100%;
@@ -36,7 +37,7 @@ header {
 	align-items: center;
 	width: inherit;
 }
-.tomimg {
+.TOMimg {
 	width: 300px;
 	height: 200px;
 }
@@ -74,8 +75,8 @@ header {
 	justify-content: center;
 }
 #tea-of-month {
-	display: inline-flex;
-	justify-content: space-between;
+	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 #bottom-container {
@@ -118,4 +119,5 @@ ISSUE 3: the left margin of the copyright container (REDLINE SPECIFIES 20px) cau
 NOTE 1: remove gaps around screen;
 NOTE 2: properly arrange header items;
 NOTE 3: by using flex-direction column, justify content and align-items switch identity;
+NOTE 4: z-index is from the lesson, do I even need this, though?;
 */
