@@ -22,14 +22,9 @@ header {
 }
 
 /*CLASSES*/
-.nav {
-	padding: 0px 8px;
-}
+
 .text {
 	color: seashell;
-}
-.black-background {
-	
 }
 .headliner { /*ISSUE 1*/
 	display: flex;
@@ -37,11 +32,6 @@ header {
 	background-color: black;
 	align-items: center;
 	width: inherit;
-}
-.TOMimg {
-	width: 300px;
-	height: 200px;
-	margin: 10px;
 }
 
 
@@ -54,12 +44,15 @@ header {
 	height: 50px;
 	padding: 9.5px 10px;
 }
+.nav {
+	padding: 0px 8px;
+}
 
-/*IDs -- MAIN Containers*/
+/*MAIN Containers*/
 #master-container {
 	display: flex;
 	margin-top: 70px;
-	flex-direction: column;
+	flex-flow: column;
 	width: 1200px;
 	align-items: center;
 }
@@ -73,13 +66,23 @@ header {
 }
 #middle-container {
 	display: flex;
+	height: 700px; /*NOTE 5*/
 	width: 1000px;
 	justify-content: center;
 }
 #tea-of-month {
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
 	flex-wrap: wrap;
+}
+.item img { /*NOTE 5*/
+	width: 300px;
+	height: 200px;
+	margin: 10px;
+}
+.item span { /*NOTE 5*/
+	display: block;
+	text-align: center;
 }
 #bottom-container {
 	background-image: url(../images/img-locations-background.jpg);
@@ -88,7 +91,7 @@ header {
 	height: 500px;
 }
 
-/*IDs -- CONTACTS Container*/
+/*CONTACTS*/
 #contacts-container { /*ISSUE 2*/
 	display: flex;
 	flex-direction: column;
@@ -96,7 +99,7 @@ header {
 	align-items: center;
 }
 
-/*IDs -- COPYRIGHT container*/
+/*COPYRIGHT*/
 #copyright-container { /*ISSUE 3*/
 	display: flex;
 	width: inherit;
@@ -122,4 +125,5 @@ NOTE 1: remove gaps around screen;
 NOTE 2: properly arrange header items;
 NOTE 3: by using flex-direction column, justify content and align-items switch identity;
 NOTE 4: z-index is from the lesson, do I even need this, though?;
+NOTE 5: properties are taken from the DevTools inspection of the project page -- I cannot take from another source without giving credit;
 */
