@@ -41,6 +41,10 @@ header {
 	align-items: center;
 	width: inherit;
 }
+.tomimg {
+	width: 300px;
+	height: 200px;
+}
 
 /*Containers*/
 #master-container {
@@ -63,6 +67,14 @@ header {
 	display: flex;
 	width: 1000px;
 	justify-content: center;
+}
+#tea-of-month {
+	display: inline-flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.padtop10 {
+	padding: 10px 0px;
 }
 
 #bottom-container {
