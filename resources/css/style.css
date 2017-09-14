@@ -3,7 +3,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	background-color: black;
-	font-family: Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 22px;
 	opacity: 0.9;
 	position: relative;
@@ -22,14 +22,12 @@ header {
 }
 
 /*CLASSES*/
-
 .text {
 	color: seashell;
 }
 .headliner { /*ISSUE 1*/
 	display: flex;
 	flex-direction: column;
-	background-color: black;
 	align-items: center;
 	width: inherit;
 }
@@ -64,9 +62,12 @@ header {
 	justify-content: center;
 	align-items: center;
 }
-#middle-container {
+#top-container .headliner {
+	background-color: black;
+}
+#middle-container { /*ISSUE 4*/
 	display: flex;
-	height: 700px; /*NOTE 5*/
+	/*height: 700px;*/ /*ISSUE 4 AND NOTE 5*/ 
 	width: 1000px;
 	justify-content: center;
 }
@@ -90,7 +91,6 @@ header {
 	width: inherit;
 	height: 500px;
 }
-
 /*CONTACTS*/
 #contacts-container { /*ISSUE 2*/
 	display: flex;
@@ -98,7 +98,6 @@ header {
 	height: 200px;
 	align-items: center;
 }
-
 /*COPYRIGHT*/
 #copyright-container { /*ISSUE 3*/
 	display: flex;
@@ -118,6 +117,7 @@ header {
 ISSUE 1: padding of .headliners: how do I remove excess top and bottom padding?;
 ISSUE 2: element top-bottom padding (or spacing) causes the phone number to exceed the bounds set forth in the redline specs: how do I fit all 'Contacts' elements witin the bounds of height: 200px?;
 ISSUE 3: the left margin of the copyright container (REDLINE SPECIFIES 20px) causes its container to protrude from the master container: how do I keep the 'Copyright' container within the bounds of the 'master' container?;
+ISSUE 4: I cannot get the items in middle-container to flex-wrap: wrap; so I am commenting out the height property as not doing so makes the items protrude from their container and distract from my further 
 */
 
 /*	NOTES
