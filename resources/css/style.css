@@ -1,8 +1,9 @@
+/*HTML Elements*/
 body {
 	display: flex;
 	flex-direction: column;
 	background-color: black;
-	font-family: Helvetica;
+	font-family: Helvetica, Arial;
 	font-size: 22px;
 	opacity: 0.9;
 	position: relative;
@@ -18,14 +19,8 @@ header {
 	border-bottom: 1px solid seashell;
 	align-items: center;
 }
-#logobox { /*NOTE 2*/
-	display: flex;
-	flex-grow: 1;
-}
-#tea-cozy-logo {
-	height: 50px;
-	padding: 9.5px 10px;
-}
+
+/*CLASSES*/
 .nav {
 	padding: 0px 8px;
 }
@@ -46,7 +41,18 @@ header {
 	height: 200px;
 }
 
-/*Containers*/
+
+/*IDs*/
+#logobox { /*NOTE 2*/
+	display: flex;
+	flex-grow: 1;
+}
+#tea-cozy-logo {
+	height: 50px;
+	padding: 9.5px 10px;
+}
+
+/*IDs -- MAIN Containers*/
 #master-container {
 	display: flex;
 	margin-top: 70px;
@@ -54,7 +60,6 @@ header {
 	width: 1200px;
 	align-items: center;
 }
-
 #top-container {
 	background-image: url(../images/img-mission-background.jpg);
 	display: flex;
@@ -73,10 +78,6 @@ header {
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-.padtop10 {
-	padding: 10px 0px;
-}
-
 #bottom-container {
 	background-image: url(../images/img-locations-background.jpg);
 	display: flex;
@@ -84,7 +85,7 @@ header {
 	height: 500px;
 }
 
-/*Contacts*/
+/*IDs -- CONTACTS Container*/
 #contacts-container { /*ISSUE 2*/
 	display: flex;
 	flex-direction: column;
@@ -92,12 +93,13 @@ header {
 	align-items: center;
 }
 
-/*COPYTIGHT*/
+/*IDs -- COPYRIGHT container*/
 #copyright-container { /*ISSUE 3*/
 	display: flex;
 	width: inherit;
 	justify-content: flex-start;
 }
+
 
 /*testing properties*/
 .blocky{
@@ -107,7 +109,7 @@ header {
 	color: white;
 
 /*	ISSUES
-ISSUE 1: padding of .headliners: how do remove excess top and bottom padding?;
+ISSUE 1: padding of .headliners: how do I remove excess top and bottom padding?;
 ISSUE 2: element top-bottom padding (or spacing) causes the phone number to exceed the bounds set forth in the redline specs: how do I fit all 'Contacts' elements witin the bounds of height: 200px?;
 ISSUE 3: the left margin of the copyright container (REDLINE SPECIFIES 20px) causes its container to protrude from the master container: how do I keep the 'Copyright' container within the bounds of the 'master' container?;
 */
