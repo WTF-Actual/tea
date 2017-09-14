@@ -3,7 +3,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	background-color: black;
-	font-family: Helvetica, Arial;
+	font-family: Helvetica, sans-serif;
 	font-size: 22px;
 	opacity: 0.9;
 	position: relative;
