@@ -135,11 +135,11 @@ header {
 	align-items: center;
 }
 /*COPYRIGHT*/
-#copyright { /*ISSUE 3*/
+footer { /*ISSUE 3*/
 	display: flex;
 	width: inherit;
 	position: relative;
-	margin-left: 20px;
+	padding-left: 20px;
 	justify-content: flex-start;
 }
 
