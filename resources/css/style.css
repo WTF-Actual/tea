@@ -83,6 +83,9 @@ header {
 	justify-content: center;
 	flex-wrap: wrap;
 }
+#tea-of-month .flex-container {
+	margin-bottom: 10px;
+}
 /*#teatypes {
 	display: flex;
 	justify-content: center;
@@ -103,7 +106,13 @@ header {
 	width: inherit;
 	height: 500px;
 	justify-content: center;
-/*	align-items: center;*/
+}
+#locations .flex-container {
+	margin: auto;
+	width: 1100px;
+}
+#locations h2 {
+	justify-content: center;
 }
 .location { /*NOTE 5*/
 	opacity: 1.0; /*NOTE 5*/
