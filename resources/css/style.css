@@ -84,7 +84,7 @@ header {
 	flex-wrap: wrap;
 }
 #tea-of-month .flex-container {
-	margin-bottom: 10px;
+	margin-bottom: 50px;
 }
 /*#teatypes {
 	display: flex;
@@ -102,25 +102,26 @@ header {
 }
 #locations { /*NOTE 5*/
 	background-image: url(../images/img-locations-background.jpg);
-	display: flex;
+	display: inline-flex;
 	width: inherit;
 	height: 500px;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 #locations .flex-container {
 	margin: auto;
 	width: 1100px;
 }
 #locations h2 {
-	justify-content: center;
+	margin-bottom: 15px; /*ISSUE 5*/
 }
+
 .location { /*NOTE 5*/
-	opacity: 1.0; /*NOTE 5*/
-  padding: 10px; /*NOTE 5*/
+	display: flex;
+	background-color: black;
+	opacity: 1.0;
   margin: 5px 20px; /*NOTE 5*/
-  background-color: black; /*NOTE 5*/
   flex-basis: 280px; /*NOTE 5*/
-  display: flex; /*NOTE 5*/
   flex-direction: column; /*NOTE 5*/
   justify-content: center; /*NOTE 5*/
 }
@@ -163,6 +164,8 @@ ISSUE 2: element top-bottom padding (or spacing) causes the phone number to exce
 ISSUE 3: the left margin of the copyright container (REDLINE SPECIFIES 20px) causes its container to protrude from the master container: how do I keep the 'Copyright' container within the bounds of the 'master' container?;
 
 ISSUE 4: I cannot get the items in middle-container to flex-wrap: wrap (solved); I am commenting out the height property as not doing so makes the items protrude from their container and distract from my further; I still cannot squeeze them into the height requirement.
+
+ISSUE 5: Cannot get the correct margin value;
 */
 
 
