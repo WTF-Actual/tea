@@ -9,7 +9,9 @@ body {
 	opacity: 0.9;
 	position: relative;
 	margin: 0px; /*NOTE 1*/
-	align-items: center; /*NOTE 3*/
+/*	align-items: center;*/ /*NOTE 4*/
+	text-align: center; /*NOTE 3*/
+	justify-content: center;
 }
 header {
 	display: flex;
@@ -19,6 +21,8 @@ header {
 	width: 100%;
 	border-bottom: 1px solid seashell;
 	align-items: center;
+	z-index: 1;
+	margin-top: 0px;
 }
 
 
@@ -31,6 +35,11 @@ header {
 	flex-direction: column;
 	align-items: center;
 	width: inherit;
+}
+.flex-container { /*NOTE 5*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 
@@ -77,7 +86,7 @@ header {
 #teatypes {
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
+	flex-wrap: wrap; /*NOTE 6 AND ISSUE 5*/
 }
 .item img { /*NOTE 5*/
 	width: 300px;
@@ -127,6 +136,7 @@ header {
 	color: white;
 
 /*	ISSUES
+
 ISSUE 1: padding of .headliners: how do I remove excess top and bottom padding?;
 
 ISSUE 2: element top-bottom padding (or spacing) causes the phone number to exceed the bounds set forth in the redline specs: how do I fit all 'Contacts' elements witin the bounds of height: 200px?;
@@ -134,9 +144,13 @@ ISSUE 2: element top-bottom padding (or spacing) causes the phone number to exce
 ISSUE 3: the left margin of the copyright container (REDLINE SPECIFIES 20px) causes its container to protrude from the master container: how do I keep the 'Copyright' container within the bounds of the 'master' container?;
 
 ISSUE 4: I cannot get the items in middle-container to flex-wrap: wrap; so I am commenting out the height property as not doing so makes the items protrude from their container and distract from my further 
+
+ISSUE 5: WHAT IN THE HELL??? I am not sure what I've done, but somehow taking out id="teatypes" is just fine, but commenting out #teatypes from CSS causes my tea of the month to lose its property values.;
 */
 
+
 /*	NOTES
+
 NOTE 1: remove gaps around screen;
 
 NOTE 2: properly arrange header items;
@@ -146,4 +160,6 @@ NOTE 3: by using flex-direction column, justify content and align-items switch i
 NOTE 4: Tea of the Month, I'm afraid, is assuming column from this line... going to attempt to un-fuck myself by commenting it out and seeing if I can salvage the code.  I hope I can.
 
 NOTE 5: properties are taken from the DevTools inspection of the project page -- I cannot take from another source without giving credit;
+
+NOTE 6: Well, what do you know??!?!?!?!?  I had this code in here, but it was at the wrong order it appears!  I need to learn more about this order of CSS rules;
 */
