@@ -1,7 +1,8 @@
+/*TEA COZY PROJECT (UNIT 4)*/
 /*HTML Elements*/
 body {
 	display: flex;
-	flex-direction: column;
+/*	flex-direction: column;*/ /*NOTE 4*/ 
 	background-color: black;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 22px;
@@ -13,7 +14,6 @@ body {
 header {
 	display: flex;
 	position: fixed;
-	z-index: 1; /*NOTE 4*/
 	background-color: black;
 	height: 69px;
 	width: 100%;
@@ -21,7 +21,8 @@ header {
 	align-items: center;
 }
 
-/*CLASSES*/
+
+/*ABSTRACT CLASSES*/
 .text {
 	color: seashell;
 }
@@ -46,6 +47,7 @@ header {
 	padding: 0px 8px;
 }
 
+
 /*MAIN Containers*/
 #master-container {
 	display: flex;
@@ -65,14 +67,15 @@ header {
 #mission .headliner {
 	background-color: black;
 }
-#steeping { /*ISSUE 4*/
+#tea-of-month { /*ISSUE 4*/
 	display: flex;
-	/*height: 700px;*/ /*ISSUE 4 AND NOTE 5*/ 
+/*	height: 700px;*/ /*ISSUE 4 AND NOTE 5*/ 
 	width: 1000px;
 	justify-content: center;
+	flex-wrap: wrap;
 }
-#tea-of-month {
-	display: inline-flex;
+#teatypes {
+	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 }
@@ -106,8 +109,14 @@ header {
 #copyright { /*ISSUE 3*/
 	display: flex;
 	width: inherit;
+	position: relative;
+	margin-left: 20px;
 	justify-content: flex-start;
 }
+
+
+
+
 
 
 /*testing properties*/
@@ -119,15 +128,22 @@ header {
 
 /*	ISSUES
 ISSUE 1: padding of .headliners: how do I remove excess top and bottom padding?;
+
 ISSUE 2: element top-bottom padding (or spacing) causes the phone number to exceed the bounds set forth in the redline specs: how do I fit all 'Contacts' elements witin the bounds of height: 200px?;
+
 ISSUE 3: the left margin of the copyright container (REDLINE SPECIFIES 20px) causes its container to protrude from the master container: how do I keep the 'Copyright' container within the bounds of the 'master' container?;
+
 ISSUE 4: I cannot get the items in middle-container to flex-wrap: wrap; so I am commenting out the height property as not doing so makes the items protrude from their container and distract from my further 
 */
 
 /*	NOTES
 NOTE 1: remove gaps around screen;
+
 NOTE 2: properly arrange header items;
+
 NOTE 3: by using flex-direction column, justify content and align-items switch identity;
-NOTE 4: z-index is from the lesson, do I even need this, though?;
+
+NOTE 4: Tea of the Month, I'm afraid, is assuming column from this line... going to attempt to un-fuck myself by commenting it out and seeing if I can salvage the code.  I hope I can.
+
 NOTE 5: properties are taken from the DevTools inspection of the project page -- I cannot take from another source without giving credit;
 */
